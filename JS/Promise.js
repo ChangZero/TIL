@@ -86,7 +86,7 @@ console.log("시작");
 
 
 //Promise.all
-//리스트로 받은 작업들 모두 완료하면 then구문 시작
+//리스트로 받은 작업들 모두 완료하면 then구문 시작함
 Promise.all([d1(), d2(), d3()]).then((res) => {
     console.log("모두 완료");
 });
