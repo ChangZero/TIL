@@ -28,6 +28,7 @@ graph = [
     [1, 7],
 ]
 
+
 visited = [0] * 9
 
 bfs(graph, 1, visited)
