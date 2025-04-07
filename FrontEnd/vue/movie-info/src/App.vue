@@ -5,6 +5,7 @@
     <p>개봉: {{ movie.year }}</p>
     <p>장르: {{ movie.category }}</p>
     <p v-for="(item, i) in movie.foods" :key="i">{{ item }}</p>
+    <button @:click="increseLike(i)">좋아요</button><span>{{ movie.like }}</span>
   </div>
 </template>
 <script>
@@ -19,6 +20,7 @@ export default {
         year: 2023,
         category: "액션, 드라마",
         textRed: "color: red",
+        like: 0,
         },
         {
         foods: ["김밥", "순대", "만두"],
@@ -26,10 +28,17 @@ export default {
         year: 2023,
         category: "액션, 드라마",
         textRed: "color: red",
+        like: 0,
         }
       ]
     }
+  },
+  methods: {
+    increseLike(i){
+      this.data[i].like += 1; //객체 내부에서 사용하는 변수는 앞에  this사용
+    }
   }
+
 }
 </script>
 
