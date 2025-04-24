@@ -25,3 +25,10 @@ npm run serve
 template에는 HTML 코드가 작성됨
 script에는 자바스크립트 코드가 들어감
 style에는 CSS 코드가 작성됨
+//동적인 값을 입력할때는 속성앞에 : 표기
+
+
+
+Props를 활용한 부모 컴포넌트에서 자식컴포넌트로 데이터 전달
+
+$emit()
